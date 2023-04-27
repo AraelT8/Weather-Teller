@@ -11,3 +11,45 @@
       <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Teller</title>
 </head>
+<body>
+    <h1>Weather Teller</h1>
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-12 col-md-3 col-xl-3 p-5 city-search">
+                <h2>Search for a city:</h2>
+                <div class="input-group mb-3">
+                    <input class="form-control textVal" placeholder="Enter a City" aria-label=".form-control-lg example">
+                    <div class="input-group-append btnPar">
+                        <button class="btn btn-secondary search" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                     </div>
+                </div>
+                <div class="container searchHistory"></div>
+              </div>
+        <div class="col-12 col-md-9 col-xl-9 dashboard">
+            <div class="row current-day">
+                <div class="  bg-light mb-3 " style ="max-width:300px;">
+                    <h2 class="card-title currentCityName text-center"></h2>
+                    <h3 class="card-title currentDate text-center"></h3>
+                    <img class="icons"/>
+                    <div class = "card-body currentDay "></div>
+                </div>
+
+                
+            </div>
+            <h2>Five Day Forecast</h2>
+            <div class="fiveDayForecast"></div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script src="./assets/javascript/script.js"></script>
+</body>
+</html>
